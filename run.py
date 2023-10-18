@@ -1,8 +1,8 @@
 # run.py
 import os
 import sys
-from api import get_reddit_post
-from processing import retrieve_comments, save_comments_to_file
+from module2.api import get_reddit_post
+from module1.processing import retrieve_comments, save_comments_to_file
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

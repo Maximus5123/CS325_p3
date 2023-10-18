@@ -1,8 +1,5 @@
-# modules/comment_processing.py
-
 def retrieve_comments(post):
     comment_list = []
-    
     # Access the comments
     post.comments.replace_more(limit=5)  # This loads all the comments
     comments = post.comments.list()
